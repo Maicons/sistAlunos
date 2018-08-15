@@ -1,0 +1,84 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #FFF;
+	margin: 0 0 0 0;
+}
+
+.cab{	
+	width: 100%;
+	height: 100px;;
+	background: #FFF;
+	text-align: center;
+}
+.nav-bar{
+	background: #c4c4c4;
+	padding: 10px;
+	border-top: 2px solid;
+	border-bottom: 5px solid;
+}
+
+.nav-menu a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	margin-right: 20px;	
+	padding: 5px;	
+}
+
+
+.nav-menu :hover {
+	color: #194690;
+	border-bottom: 2px solid;
+}
+
+.container-form{
+	width: 400px;
+	display: table;
+	margin: 10% auto;
+	padding: 50px 30px;
+	box-shadow: 1px 2px 5px 1px #777777;
+	background: #FFF;
+}
+.row{
+	display: table;
+	width: 100%;
+}
+
+.col-med {
+	display: table-cell;
+	padding-right: 20px;
+	width: 40%;
+}
+
+.col-med input{
+	display: table-cell;
+	width: 20%;	
+}
+
+select{
+	height: 35px;
+}
+
+
+form label{
+	margin-bottom: 7px;
+	display: block;
+}
+form input{
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	height: 25px;
+	outline: none;
+}
+form button{
+	background: #194690;
+	color: #FFF;
+	padding: 5px 10px;
+	border: 0;
+	display: inline-block;
+	margin: 10px 0 0 0 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-right: 5px;
+	cursor: pointer;
+}
