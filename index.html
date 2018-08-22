@@ -19,27 +19,29 @@
 	</header>
 	<nav class="nav-bar">
 		<div class="nav-menu">
-			<a href="">Cadastro de Alunos </a>
+			<button type="button" onclick="setTemplate(1)">
+				Cadastro de Alunos 
+			</button>
 			<a href="">Cadastro de Trabalhos</a>
 			<a href="">Avaliações</a>
 		</div>
 
 	</nav>
 
-	<nav class="container-form">
-		<form id="form-login" action="javascript:void()" onSubmit="send()">
+	<nav class="container-form" id="container-form" style="display:none" >
+		<form id="form-login"  action="javascript:void()" onSubmit="send()">
 			<div class="row">
 
 				<div class="col-med">
-					<label for="usuario">ID</label>
+					<label for="id">ID</label>
 					
-					<input type="text" name="usuario" required id="nome" />
+					<input type="number" name="id" required id="c_id" />
 				</div>
 
 				<div class="col-med">
 
 					<label for="status">Status</label>
-					<select type="text" name="status" required id="status"> Status
+					<select type="text" name="status" required id="c_status"> Status
 						<option value="Ativo">Ativo</option>
 						<option value="Inativo">Inativo</option>					
 					</select>
@@ -48,66 +50,40 @@
 			</div>
 			
 			<div class="row">
-				<label for="senha">Senha</label>
-				<input type="password" name="senha" required id="senha" />
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" required id="c_nome" />
 			</div>
 			<div class="row">	
-				<button type="submit">
+				<button type="submit" onClick="setTemplate(2)">
 					Enviar
 				</button>
 				<button type="reset">
 					Limpar
 				</button>
-				<button type="button" onClick="setTemplate(2)">
-					Cadastrar
-				</button>
-			</div>
-		</form>
-
-		<form id="form-cadastro" action="javascript:void()" onSubmit="cadastrar()" style="display:none;">
-			<div class="row">
-					<label for="usuario">Nome</label>
-					<input type="text" name="nome" required id="c_nome" />
-			</div>
-				<div class="row">
-					<label for="email">Email</label>
-					<input type="email" name="email" required id="c_email" />
-				</div>
-				<div class="row">
-					<label for="senha">Senha</label>
-					<input type="password" name="senha" required id="c_senha" />
-				</div>
-				<div class="row">	
-					<button type="submit">
-						Cadastrar
-					</button>
-					<button type="button" onClick="setTemplate(1)">
-						Cancelar
-					</button>
 			</div>
 			<div class="row">
-				<div id="dados-cadastro" style="display:none">
-					<h3>Dados do Cadastro</h3>
-					<div class="row">
-						<strong>
-							Nome:
-						</strong>
-						<span id="c-nome"></span>
-					</div>
-					<div class="row">
-						<strong>
-							Email:
-						</strong>
-						<span id="c-email"></span>
-					</div>
-					<div class="row">
-						<strong>
-							Senha:
-						</strong>
-						<span id="c-senha"></span>
+					<div id="dados-cadastro" style="display:none">
+						<h3>Dados do Cadastro</h3>
+						<div class="row">
+							<strong>
+								Nome:
+							</strong>
+							<span id="c-id"></span>
+						</div>
+						<div class="row">
+							<strong>
+								Email:
+							</strong>
+							<span id="c-nome"></span>
+						</div>
+						<div class="row">
+							<strong>
+								Senha:
+							</strong>
+							<span id="c-status"></span>
+						</div>
 					</div>
 				</div>
-			</div>
 		</form>
 	</nav>	
 </body>

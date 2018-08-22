@@ -1,39 +1,41 @@
 function send(){
 
+	var id = document.getElementById("id");
 	var nome = document.getElementById("nome");
-	var senha = document.getElementById("senha");
+	var status = document.getElementById("status");
 
 
+	alert(id.value);
 	alert(nome.value);
-	alert(senha.value);
+	alert(status.value);
 
 	return false;
 
 }
+
 function setTemplate(option){
 
 	if(option == 1){
 
-		document.getElementById("form-login").style.display = 'block';
-		document.getElementById("form-cadastro").style.display = 'none';
+		document.getElementById("container-form").style.display ='block';
 
-	}else{
+	}
+	else{
 
-		document.getElementById("form-login").style.display = 'none';
-		document.getElementById("form-cadastro").style.display = 'block';
+		document.getElementById("dados-cadastro").style.display = 'block';
 
 	}
 	
 }
 function cadastrar(){
 
-	var nome  = document.getElementById("c_nome").value;
-	var email = document.getElementById("c_email").value;
-	var senha = document.getElementById("c_senha").value;
+	var nome  = document.getElementById("c_id").value;
+	var email = document.getElementById("c_nome").value;
+	var senha = document.getElementById("c_status").value;
 
-	document.getElementById("c-nome").innerHTML  = nome;
-	document.getElementById("c-email").innerHTML = email;
-	document.getElementById("c-senha").innerHTML = senha;
+	document.getElementById("c-id").innerHTML  = nome;
+	document.getElementById("c-nome").innerHTML = email;
+	document.getElementById("c-status").innerHTML = senha;
 
 	document.getElementById("dados-cadastro").style.display = 'block';
 	

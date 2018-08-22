@@ -1,0 +1,26 @@
+{
+  "name": "sistalunos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maicons/sistAlunos.git"
+  },
+  "keywords": [
+    "rockbass2089"
+  ],
+  "author": "Maicon Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maicons/sistAlunos/issues"
+  },
+  "homepage": "https://github.com/Maicons/sistAlunos#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
